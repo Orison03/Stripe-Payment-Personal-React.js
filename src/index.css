@@ -120,9 +120,15 @@ h4 {
   display: none;
 }
 
+.hero-info-heading{
+  color: #0A2540;
+  font-size: rem;
+}
+
 .hero-info-subtitle{
   font-size: 1.1rem;
   margin-top: 5%;
+  color: #0A2540;
 }
 
 
@@ -147,7 +153,7 @@ h4 {
 
   .btn-container{
     display: flex;
-    width: 70%;
+    width: 80%;
     justify-content: space-between;
     align-self: center;
   }
@@ -245,6 +251,7 @@ h4 {
   }
   .hero-info-heading{
     font-size: 4.9rem;
+    color: #0A2540;
   }
   .hero-info-subtitle{
     font-size: 1rem;
