@@ -1,103 +1,59 @@
-import React from "react";
 import {
-  FaRegMoneyBillAlt,
-  FaCreativeCommonsBy,
-  FaCloudscale,
-  FaWordpressSimple,
-  FaBusinessTime,
-  FaRegNewspaper,
-  FaCcStripe,
-  FaSistrix,
+  FaCreditCard,
+  FaBook,
+  FaBriefcase,
+  FaCreativeCommonsNc,
+  FaAmericanSignLanguageInterpreting,
+  FaAward,
+  FaBurn,
+  FaBolt,
+  FaCalendarDay,
+  FaBullhorn,
+  FaChalkboardTeacher,
+  FaDollyFlatbed,
+  FaCubes,
+  FaFax,
+  FaStripe,
 } from "react-icons/fa";
-import {
-  AiOutlineGlobal,
-  AiOutlineApi,
-  AiOutlinePieChart,
-} from "react-icons/ai";
-import { SiElementary, SiMarketo, SiFoursquarecityguide } from "react-icons/si";
-import {
-  HiDocumentDuplicate,
-} from "react-icons/hi";
-import { BiArchive, BiCog, BiDonateHeart } from "react-icons/bi";
-import {
-  MdPermIdentity,
-  MdPayment,
-  MdOutlineCropLandscape,
-} from "react-icons/md";
-
+import React from "react";
 const sublinks = [
   {
     page: "products",
     links: [
-      { label: "payments", icons: <MdPayment />, url: "/payment" },
-      { label: "billing", icons: <FaRegMoneyBillAlt />, url: "/billing" },
-      { label: "checkout", icons: <FaSistrix />, url: "/checkout" },
-      { label: "element", icons: <SiElementary />, url: "/element" },
-      { label: "identity", icons: <MdPermIdentity />, url: "/identity" },
-      { label: "connect", icons: <BiCog />, url: "/connect" },
+      { label: "payment", icon: <FaCreditCard />, url: "/products" },
+      { label: "billing", icon: <FaCreativeCommonsNc />, url: "/billing" },
+      {
+        label: "connect",
+        icon: <FaAmericanSignLanguageInterpreting />,
+        url: "/connect",
+      },
+      { label: "element", icon: <FaAward />, url: "/element" },
     ],
   },
   {
     page: "solutions",
     links: [
-      { label: "ecommerce", icons: <FaCreativeCommonsBy />, url: "/ecommerce" },
-      { label: "platform", icons: <FaCloudscale />, url: "/platform" },
-      { label: "wordpress", icons: <FaWordpressSimple />, url: "/wordpress" },
-      { label: "marketplace", icons: <SiMarketo />, url: "/marketplace" },
-      { label: "crypto", icons: <MdPayment />, url: "/crypto" },
-      {
-        label: "global businesses",
-        icons: <AiOutlineGlobal />,
-        url: "/globalbusinesses",
-      },
-    ],
-  },
-  {
-    page: "developers",
-    links: [
-      {
-        label: "documentation",
-        icons: <HiDocumentDuplicate />,
-        url: "/documentation",
-      },
-      { label: "full API", icons: <AiOutlineApi />, url: "/api" },
-      { label: "API status", icons: <BiArchive />, url: "/wordpress" },
-      {
-        label: "API changelog",
-        icons: <AiOutlinePieChart />,
-        url: "/apichangelog",
-      },
-      { label: "build stripe app", icons: <FaCcStripe />, url: "/build" },
-      {
-        label: "guides",
-        icons: <SiFoursquarecityguide />,
-        url: "/guide",
-      },
+      { label: "identity", icon: <FaBurn />, url: "/identity" },
+      { label: "checkout", icon: <FaBolt />, url: "/checkout" },
     ],
   },
   {
     page: "resources",
     links: [
-      {
-        label: "support center",
-        icons: <BiDonateHeart />,
-        url: "/supportcenter",
-      },
-      {
-        label: "support plan",
-        icons: <MdOutlineCropLandscape />,
-        url: "/plan",
-      },
-      { label: "jobs", icons: <FaBusinessTime />, url: "/time" },
-      {
-        label: "news room",
-        icons: <FaRegNewspaper />,
-        url: "/room",
-      },
+      { label: "ecommerce", icon: <FaCalendarDay />, url: "/products" },
+      { label: "support plan", icon: <FaBullhorn />, url: "/products" },
+      { label: "jobs", icon: <FaChalkboardTeacher />, url: "/products" },
+      { label: "news room", icon: <FaDollyFlatbed />, url: "/products" },
     ],
   },
   {
-    page: "pricing",
+    page: "developers",
+    links: [
+      { label: "documtation", icon: <FaBook />, url: "/products" },
+      { label: "API status", icon: <FaCubes />, url: "/products" },
+      { label: "changelog", icon: <FaFax />, url: "/products" },
+      { label: "build stripe", icon: <FaStripe />, url: "/products" },
+    ],
   },
 ];
 
